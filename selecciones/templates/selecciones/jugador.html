@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{%block header %}
+<link rel="stylesheet" href="{% static '/selecciones/css/style.css' %}">
+{% endblock %}
+
+{% block content %}
+	
+	<div class="cont-plyr">
+		<img class="picture" src="" alt="">
+		<div style="display: inline-block; vertical-align: top;">
+			<h3 class="plyr-name">{{ nombre }}</h3>
+			<span class="plyr-info">N&uacute;mero: {{ numero }}</span><br>
+		</div>
+	</div>
+
+
+{% endblock %}

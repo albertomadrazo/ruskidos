@@ -1,0 +1,24 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mundial</title>
+<!-- 	<style>
+		body{background-color: olive;}
+		ul{padding-left:none;}
+	</style> -->
+	<link rel="stylesheet" href="{% static 'selecciones/css/bootstrap.min.css' %}">
+	<link rel="stylesheet" href="{% static 'selecciones/css/bootstrap-theme.min.css' %}">
+	<link rel="stylesheet" href="{% static 'desp.css' %}">
+	{% block header %}{% endblock %}
+
+</head>
+<body>
+<h2>fucho</h2>
+	<div class="diva">
+		{% block content %}
+		{% endblock %}
+	</div>
+</body>
+</html>

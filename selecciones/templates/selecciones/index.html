@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+	{{ confederacion.nombre }}
+	{% if jugadores %}
+	<ul>
+		{% for j in jugadores %}
+		<li>
+			{{ j.numero }} - {{ j.nombre }}
+		</li>
+		{% endfor %}
+	</ul>
+	{% endif %}
+{% endblock %}
